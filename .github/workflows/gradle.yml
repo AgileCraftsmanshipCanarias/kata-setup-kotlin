@@ -19,7 +19,7 @@ jobs:
 
       - uses: actions/setup-java@v3
         with:
-          distribution: 'corretto'
-          java-version: '17'
+          distribution: "corretto"
+          java-version: "17"
       - name: Run build
-        run: gradlew clean build
+        run: ./gradlew clean build
