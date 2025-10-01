@@ -16,7 +16,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
     testImplementation(kotlin("test"))
     testImplementation("org.assertj:assertj-core:3.27.6")
-    testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:6.1.0")
     testImplementation("org.mockito:mockito-inline:5.2.0")
 }
 
