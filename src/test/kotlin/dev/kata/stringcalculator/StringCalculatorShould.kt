@@ -1,17 +1,14 @@
 package dev.kata.stringcalculator
 
-import org.assertj.core.api.Assertions.*
-import org.junit.jupiter.api.Test
-import org.mockito.kotlin.doThrow
-import org.mockito.kotlin.mock
+import io.kotest.core.spec.style.DescribeSpec
+import io.kotest.matchers.shouldBe
 
-internal class StringCalculatorShould {
-    @Test
-    fun `work`() {
-        val stringCalculator = StringCalculator()
-
-        val result = stringCalculator.execute()
-
-        assertThat(result).isEqualTo(0)
+internal class StringCalculatorShould : DescribeSpec({
+    describe("StringCalculator") {
+        it("should return 0 when execute is called") {
+            val stringCalculator = StringCalculator()
+            val result = stringCalculator.execute()
+            result shouldBe 0
+        }
     }
-}
+})
